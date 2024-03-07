@@ -1,5 +1,5 @@
-WORD_DIR = /home/akastler/data/wordpress
-MARIA_DIR = /home/akastler/data/mariadb
+WORD_DIR = /home/aherrman/data/wordpress
+MARIA_DIR = /home/aherrman/data/mariadb
 
 
 all: build up
@@ -25,8 +25,8 @@ clean: down
 	@docker system prune -f
 	@docker volume rm srcs_mariadb
 	@docker volume rm srcs_wordpress
-	@sudo rm -rf /home/akastler/data/wordpress/*
-	@sudo rm -rf /home/akastler/data/mariadb/*
+	@sudo rm -rf /home/aherrman/data/wordpress/*
+	@sudo rm -rf /home/aherrman/data/mariadb/*
 	@echo "Inception is cleaned"
 
 fclean: clean
