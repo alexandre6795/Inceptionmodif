@@ -10,7 +10,7 @@ fi
 wp config create --allow-root --dbname=${DATABASE} --dbuser=${USER} --dbpass=${USER_PASSWORD} --dbhost=mariadb
 wp core install --allow-root --url=${HOSTNAME} --title="Inception" --admin_user=${ROOT_NAME} --admin_password=${ROOT_PASSWORD} --admin_email=${ROOT_NAME}.adm@${HOSTNAME}
 wp user create --allow-root ${USER} ${USER}@${HOSTNAME} --role=author --user_pass=${USER_PASSWORD}
-wp theme activate --allow-root twentytwentytwo
+wp theme activate --allow-root twentyfourteen
 wp plugin update --allow-root --all
 
 echo "done."
